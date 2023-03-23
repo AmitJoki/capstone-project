@@ -4,7 +4,7 @@ export default function Footer() {
     <footer>
       <img src={Logo} alt="Little Lemon Logo" />
       <section>
-        <h1 className="section-title">Doormat Navigation</h1>
+        <h1 className="section-categories">Doormat Navigation</h1>
         <nav>
           <ul>
             <li><a href="/">Home</a></li>
@@ -17,7 +17,7 @@ export default function Footer() {
         </nav>
       </section>
       <section>
-        <h1 className="section-title">Contact</h1>
+        <h1 className="section-categories">Contact</h1>
         <ul>
           <li>Address</li>
           <li>Phone Number</li>
@@ -25,7 +25,7 @@ export default function Footer() {
         </ul>
       </section>
       <section>
-        <h1 className="section-title">Social Media Links</h1>
+        <h1 className="section-categories">Social Media Links</h1>
         <ul>
           <li>Address</li>
           <li>Phone Number</li>

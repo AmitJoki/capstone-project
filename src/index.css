@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700;800&display=swap');
 
 :root {
   --primary-green: #495e57;
@@ -14,35 +14,27 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Karla';
 }
 
 body {
-  margin: 0;
-  font-family: 'Karla';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 960px;
-  margin: 0 auto;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
 
 .title {
   font-family: 'Markazi Text';
-  font-weight: medium;
+  font-weight: 500;
   font-size: 64px;
 }
 .subtitle {
   font-family: 'Markazi Text';
-  font-weight: normal;
+  font-weight: 400;
   font-size: 40px;
 }
 
-.lead-text {
-  font-weight: medium;
+.lead-text, button {
+  font-weight: 500;
   font-size: 18px;
 }
 .section-title {
@@ -55,17 +47,17 @@ code {
   font-size: 16px;
 }
 .card-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
 }
 
 p {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
 }
 
 .highlight-text {
-  font-weight: medium;
+  font-weight: 500;
   font-size: 16px;
 }
