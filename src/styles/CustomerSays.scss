@@ -1,0 +1,46 @@
+.customer-says-wrapper {
+  background-color: var(--primary-green);
+  margin: 50px 0;
+  padding: 50px 0 100px;
+  .customer-says {
+    margin: 0 auto;
+    text-align: center;
+    > h1 {
+      color: var(--primary-yellow);
+      margin-bottom: 30px;
+    }
+    > div {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      section {
+        flex: 1;
+        > div {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          margin: 20px;
+          text-align: left;
+          span {
+            font-weight: 700;
+            color: var(--secondary-paleorange);
+            span {
+              display: inline-block;
+              margin-bottom: 5px;
+            }
+          }
+        }
+        img {
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+        }
+        > p {
+          font-weight: 700;
+          color: var(--secondary-grey);
+          width: 200px;
+        }
+      }
+    }
+  }
+}

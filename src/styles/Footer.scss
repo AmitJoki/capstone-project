@@ -1,0 +1,14 @@
+
+footer {
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  section {
+    margin-top: 15px;
+    h1 {
+      color: var(--secondary-brown);
+      margin-bottom: 24px;
+    }
+  }
+}

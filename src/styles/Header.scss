@@ -1,0 +1,11 @@
+header {
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  nav ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+  }
+}

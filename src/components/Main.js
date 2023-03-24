@@ -1,4 +1,5 @@
 import CallToAction from './CallToAction';
+import CustomersSay from './CustomersSay';
 import Specials from './Specials';
 
 export default function Main() {
@@ -9,9 +10,8 @@ export default function Main() {
         <h1 className="title">This week's specials!</h1>
         <button>Online Menu</button>
       </div>
-      <div className="specials">
-        <Specials />
-      </div>
+      <Specials />
+      <CustomersSay />
     </main>
   );
 }

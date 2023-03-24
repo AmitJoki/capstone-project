@@ -1,14 +1,9 @@
-header {
-  margin: 30px auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  nav ul {
-    display: flex;
-    gap: 50px;
-    list-style: none;
-  }
-}
+@import url('styles/Header.scss');
+@import url('styles/Main.scss');
+@import url('styles/CallToAction.scss');
+@import url('styles/Specials.scss');
+@import url('styles/CustomerSays.scss');
+@import url('styles/Footer.scss');
 
 ul {
   list-style: none;
@@ -26,108 +21,10 @@ button {
   padding: 16px 24px;
 }
 
-.specials {
-  display: flex;
-  gap: 30px;
-  margin: 0 auto;
-  .special {
-    flex: 1;
-    background-color: var(--secondary-grey);
-    border-radius: 16px 16px 0 0;
-    .cover {
-      height: 300px;
-      border-radius: 16px 16px 0 0;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    .info {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      label {
-        color: black;
-      }
-      p {
-        color: var(--secondary-orange);
-        font-weight: 700;
-      }
-    }
-    > p {
-      padding: 20px;
-      color: var(--primary-green);
-      margin-bottom: 30px;
-      height: 100px;
-      font-weight: 600;
-    }
-    .delivery {
-      padding: 30px 20px;
-      font-weight: 700;
-      img {
-        margin-left: 10px;
-      }
-    }
-  }
-}
-
-footer {
-  margin: 30px auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  section {
-    margin-top: 15px;
-    h1 {
-      color: var(--secondary-brown);
-      margin-bottom: 24px;
-    }
-  }
-}
-
-.online-menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 50px auto;
-}
-
-.call-to-action-wrapper {
-  background-color: var(--primary-green);
-  margin-bottom: 100px;
-  .call-to-action {
-    padding: 32px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    section {
-      width: 350px;
-      .title {
-        color: var(--primary-yellow);
-        margin: -15px 0 -20px 0;
-      }
-      .subtitle, p {
-        color: white;
-      }
-      p {
-        margin: 30px 0 20px;
-      }
-    }
-    img {
-      position: absolute;
-      right: 0;
-      border-radius: 16px;
-      width: 350px;
-      height: 350px;
-      object-fit: cover;
-    }
-  }
-}
-
-
+/* Responsive */
 
 @media (min-width: 980px) {
-  header, footer, .call-to-action, .online-menu, .specials {
+  header, footer, .call-to-action, .online-menu, .specials, .customer-says {
     width: 960px;
   }
 }

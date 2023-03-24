@@ -36,5 +36,5 @@ function Special({ imgSrc, name, description, price }) {
 }
 
 export default function Specials() {
-  return dishes.map(props => <Special key={props.name} {...props} />);
+  return <div className='specials'>{dishes.map(props => <Special key={props.name} {...props} />)}</div>;
 }
