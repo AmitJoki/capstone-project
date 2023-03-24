@@ -1,19 +1,14 @@
-import CallToAction from './CallToAction';
-import Chicago from './Chicago';
-import CustomersSay from './CustomersSay';
-import Specials from './Specials';
+import { Route, Routes } from 'react-router-dom';
+import BookingPage from './BookingPage';
+import HomePage from './HomePage';
 
 export default function Main() {
   return (
     <main>
-      <CallToAction />
-      <div className="online-menu">
-        <h1 className="title">This week's specials!</h1>
-        <button>Online Menu</button>
-      </div>
-      <Specials />
-      <CustomersSay />
-      <Chicago />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/booking" element={<BookingPage />} />
+      </Routes>
     </main>
   );
 }
