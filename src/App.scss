@@ -5,6 +5,7 @@
 @import url('styles/CustomerSays.scss');
 @import url('styles/Chicago.scss');
 @import url('styles/Footer.scss');
+@import url('styles/BookingPage.scss');
 
 ul {
   list-style: none;
@@ -25,7 +26,7 @@ button {
 /* Responsive */
 
 @media (min-width: 1024px) {
-  header, footer, .call-to-action, .online-menu, .specials, .customer-says, .chicago {
+  header, footer, .call-to-action, .online-menu, .specials, .customer-says, .chicago, .booking-page {
     width: 960px;
   }
 }
