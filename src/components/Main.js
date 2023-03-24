@@ -1,4 +1,5 @@
 import CallToAction from './CallToAction';
+import Chicago from './Chicago';
 import CustomersSay from './CustomersSay';
 import Specials from './Specials';
 
@@ -12,6 +13,7 @@ export default function Main() {
       </div>
       <Specials />
       <CustomersSay />
+      <Chicago />
     </main>
   );
 }

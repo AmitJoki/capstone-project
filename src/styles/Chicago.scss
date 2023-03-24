@@ -1,0 +1,36 @@
+.chicago {
+  margin: 0 auto 100px;
+  display: flex;
+  justify-content: space-between;
+  section {
+    position: relative;
+    justify-self: flex-end;
+    h1 {
+      color: var(--primary-green);
+    }
+    h2 {
+      margin: -10px 0 30px 0;
+      color: var(--primary-yellow);
+    }
+    img {
+      width: 300px;
+      border-radius: 16px;
+      &:first-child {
+        margin-top: 100px
+      }
+    }
+    img + img {
+      position: absolute;
+      left: 100px;
+      top: 20px;
+    }
+    p {
+      width: 400px;
+      font-weight: 700;
+      color: var(--primary-green)
+    }
+    &:nth-child(2) {
+      margin-right: 100px;
+    }
+  }
+}

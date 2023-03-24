@@ -1,14 +1,18 @@
-
-footer {
-  margin: 30px auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  section {
-    margin-top: 15px;
-    h1 {
-      color: var(--secondary-brown);
-      margin-bottom: 24px;
+.footer-wrapper {
+  background: var(--secondary-grey);
+  margin: 0 auto;
+  footer {
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    section {
+      margin-top: 15px;
+      h1 {
+        color: var(--secondary-brown);
+        margin-bottom: 24px;
+      }
     }
   }
 }
