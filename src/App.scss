@@ -27,14 +27,14 @@ button {
   }
 }
 
-.confirmed-booking, .placeholder {
+.placeholder {
   margin: 50px auto;
 }
 
 /* Responsive */
 
 @media (min-width: 1024px) {
-  header, footer, .call-to-action, .online-menu, .specials, .customer-says, .chicago, .booking-page, .confirmed-booking, .placeholder {
+  header, footer, .call-to-action, .online-menu, .specials, .customer-says, .chicago, .booking-page, .placeholder {
     width: 960px;
   }
 }
