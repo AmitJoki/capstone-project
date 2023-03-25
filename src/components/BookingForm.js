@@ -1,13 +1,20 @@
 import { useState } from 'react';
 
+export function dateToYYYYmmDD(date) {
+  if (!date) return '';
+  return new Date(date.getTime() - (date.getTimezoneOffset() * 60000 ))
+          .toISOString()
+          .split("T")[0];
+}
+
 export default function BookingForm({ availableTimes, dispatch }) {
-  const [date, setDate] = useState('');
+  const [date, setDate] = useState(dateToYYYYmmDD(new Date()));
   const [time, setTime] = useState(17);
   const [numberOfGuests, setNumberOfGuests] = useState(0);
   const [occasion, setOccasion] = useState('');
   const onDateChange = (e) => {
-    const value = e.target.value;
-    setDate(value);
+    const value = e.target.valueAsDate;
+    setDate(dateToYYYYmmDD(value));
     dispatch(value);
   }
   return (
@@ -18,7 +25,7 @@ export default function BookingForm({ availableTimes, dispatch }) {
         <input type="date" id="res-date" value={date} onChange={onDateChange} />
         <label htmlFor="res-time">Choose time</label>
         <select id="res-time" value={time} onChange={(e) => setTime(e.target.value)}>
-          {availableTimes.map(time => <option key={time} value={time}>{ time }:00</option>)}
+          {availableTimes.map(time => <option key={time} value={time}>{time}</option>)}
         </select>
         <label htmlFor="guests">Number of guests</label>
         <input type="number" value={numberOfGuests} placeholder={1} min={1} max={10} id="guests" onChange={(e) => setNumberOfGuests(e.target.value)} />
