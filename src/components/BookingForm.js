@@ -7,7 +7,7 @@ export function dateToYYYYmmDD(date) {
           .split("T")[0];
 }
 
-export default function BookingForm({ availableTimes, dispatch }) {
+export default function BookingForm({ availableTimes, dispatch, submitForm }) {
   const [date, setDate] = useState(dateToYYYYmmDD(new Date()));
   const [time, setTime] = useState(17);
   const [numberOfGuests, setNumberOfGuests] = useState(0);
@@ -17,10 +17,14 @@ export default function BookingForm({ availableTimes, dispatch }) {
     setDate(dateToYYYYmmDD(value));
     dispatch(value);
   }
+  const submit = e => {
+    e.preventDefault();
+    submitForm(e.formData);
+  }
   return (
     <>
       <h1>Book Now</h1>
-      <form style={{display: 'grid', maxWidth: '200px', gap: '20px'}}>
+      <form style={{display: 'grid', maxWidth: '200px', gap: '20px'}} onSubmit={submit}>
         <label htmlFor="res-date">Choose date</label>
         <input type="date" id="res-date" value={date} onChange={onDateChange} />
         <label htmlFor="res-time">Choose time</label>

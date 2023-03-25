@@ -23,10 +23,14 @@ button {
   padding: 16px 24px;
 }
 
+.confirmed-booking {
+  margin: 50px auto;
+}
+
 /* Responsive */
 
 @media (min-width: 1024px) {
-  header, footer, .call-to-action, .online-menu, .specials, .customer-says, .chicago, .booking-page {
+  header, footer, .call-to-action, .online-menu, .specials, .customer-says, .chicago, .booking-page, .confirmed-booking {
     width: 960px;
   }
 }
