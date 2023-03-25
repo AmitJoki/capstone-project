@@ -1,12 +1,12 @@
 import { useReducer } from 'react';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import BookingPage from './BookingPage';
+import Chicago from './Chicago';
 import ConfirmedBooking from './ConfirmedBooking';
 import HomePage from './HomePage';
+import Specials from './Specials';
 
 /*global fetchAPI, submitAPI */
-
-export const initialTimes = [17, 18, 19, 20, 21, 22];
 
 export function updateTimes(state, date) {
   return fetchAPI(date);
@@ -29,6 +29,8 @@ export default function Main() {
         <Route path="/" element={<HomePage />} />
         <Route path="/booking" element={<BookingPage availableTimes={availableTimes} dispatch={dispatch} submitForm={submitForm} />} />
         <Route path="/booking-confirmed" element={<ConfirmedBooking />} />
+        <Route path="/about" element={<><br /><br /><Chicago /></>} />
+        <Route path="/menu" element={<><br /><Specials /><br /><br /></>} />
       </Routes>
     </main>
   );

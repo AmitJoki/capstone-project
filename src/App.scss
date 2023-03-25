@@ -21,6 +21,10 @@ button {
   background: var(--primary-yellow);
   color: black;
   padding: 16px 24px;
+  cursor: pointer;
+  &:disabled {
+    opacity: 0.5;
+  }
 }
 
 .confirmed-booking {
