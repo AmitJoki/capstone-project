@@ -27,14 +27,14 @@ button {
   }
 }
 
-.confirmed-booking {
+.confirmed-booking, .placeholder {
   margin: 50px auto;
 }
 
 /* Responsive */
 
 @media (min-width: 1024px) {
-  header, footer, .call-to-action, .online-menu, .specials, .customer-says, .chicago, .booking-page, .confirmed-booking {
+  header, footer, .call-to-action, .online-menu, .specials, .customer-says, .chicago, .booking-page, .confirmed-booking, .placeholder {
     width: 960px;
   }
 }
@@ -74,5 +74,11 @@ button {
     .special {
       margin: 0 50px;
     }
+  }
+  .booking-page {
+    margin: 0 50px;
+  }
+  .placeholder {
+    margin: 50px;
   }
 }

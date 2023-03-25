@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div className='footer-wrapper'>
       <footer>
-        <img src={Logo} alt="Little Lemon Logo" />
+        <Link to="/"><img src={Logo} alt="Little Lemon Logo" /></Link>
         <section>
           <h1 className="section-categories">Doormat Navigation</h1>
           <nav>

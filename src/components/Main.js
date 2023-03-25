@@ -27,10 +27,13 @@ export default function Main() {
     <main>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/home" element={<HomePage />} />
         <Route path="/booking" element={<BookingPage availableTimes={availableTimes} dispatch={dispatch} submitForm={submitForm} />} />
         <Route path="/booking-confirmed" element={<ConfirmedBooking />} />
         <Route path="/about" element={<><br /><br /><Chicago /></>} />
         <Route path="/menu" element={<><br /><Specials /><br /><br /></>} />
+        <Route path="/order-online" element={<div className='placeholder'><h1>Order Online</h1></div>} />
+        <Route path="/login" element={<div className='placeholder'><h1>Login</h1></div>} />
       </Routes>
     </main>
   );
